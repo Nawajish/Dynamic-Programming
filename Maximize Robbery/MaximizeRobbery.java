@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class MaximizeRobbery {
 	// There are n houses build in a line, each of which contains some value in it. 
 	// A thief is going to steal the maximal value of these houses, 
@@ -70,11 +73,12 @@ public class MaximizeRobbery {
 
 	public static void main(String args[]){
 		Scanner sc = new Scanner(System.in);
-
+		System.out.println("Enter number of houses: ");
 		int n  = sc.nextInt();						
 
 		int[] houses = new int[n];
 
+		System.out.println("Enter value of each of " + n + " houses: ");
 		for(int i = 0; i < n; i++){
 			houses[i] = sc.nextInt();
 		}
