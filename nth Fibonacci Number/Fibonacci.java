@@ -1,5 +1,7 @@
+import java.util.Scanner;
+import java.util.Arrays;
 
-public class FibonacciNumber{
+public class Fibonacci{
 	
 	public static int fibNaive(int n){
 		if(n == 0 || n == 1){
@@ -38,13 +40,16 @@ public class FibonacciNumber{
 	}
 
 	public static void main(String args[]){		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter desired Fibonacci term: ");
+		int n = sc.nextInt();
 
 		int[] cache = new int[n + 1];
 		Arrays.fill(cache, -1);
 		cache[0] = 0;
 		cache[1] = 1;
 
-		System.out.println(fibRecursive(n));
+		System.out.println(fibNaive(n));
 		System.out.println(fibMemoization(n, cache));
 		System.out.println(fibTabulation(n));
 		System.out.println(fibMostOptimized(n));
