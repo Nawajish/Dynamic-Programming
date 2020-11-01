@@ -7,6 +7,21 @@ import java.util.Arrays;
 // 3. In one move, you are allowed to climb 1, 2 or 3 stairs.
 // 4. You are required to print the number of different paths via which you can climb to the top.
 
+// Input Format
+// A number n
+
+// Output Format
+// A number representing the number of ways to climb the stairs from 0 to top.
+
+// Constraints
+// 0 <= n <= 20
+
+// Sample Input
+// 4
+
+// Sample Output
+// 7
+
 public class ClimbingStairsFixedJumps{	
 
 	public static int climbingStairsNaive(int n){		
