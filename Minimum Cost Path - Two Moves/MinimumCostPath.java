@@ -22,7 +22,7 @@ import java.util.Scanner;
 public class MinimumCostPath{
 
 	public static int minimumCostPathNaive(int r, int c, int[][] grid){
-		// If out of bounds of grid, return negative infinity
+		// If out of bounds of grid, return positive infinity
 		if(r >= grid.length && c >= grid[0].length)
 			return Integer.MAX_VALUE;		
 		// If at bottom-right position, only this coin can be picked
@@ -40,7 +40,7 @@ public class MinimumCostPath{
 	}
 
 	public static int minimumCostPathMemoization(int r, int c, int[][] grid, int[][] cache){		
-		// Base case - if out of grid bounds, return negative infinity		
+		// Base case - if out of grid bounds, return positive infinity		
 		if(r >= grid.length && c >= grid[0].length)
 			return Integer.MAX_VALUE;		
 
