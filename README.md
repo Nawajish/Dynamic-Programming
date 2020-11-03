@@ -10,3 +10,4 @@
 7. [Goldmine](https://github.com/Nawajish/Dynamic-Programming/tree/main/Goldmine)
 8. [Target Sum](https://github.com/Nawajish/Dynamic-Programming/tree/main/Target%20Sum)
 9. [Coin Change with Combinations](https://github.com/Nawajish/Dynamic-Programming/tree/main/Coin%20Change%20with%20Combinations)
+10. [Coin Change with Permutations](https://github.com/Nawajish/Dynamic-Programming/tree/main/Coin%20Change%20with%20Permutations)
