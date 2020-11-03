@@ -7,3 +7,5 @@
 4. [Climbing Stairs with minimum number of jumps](https://github.com/Nawajish/Dynamic-Programming/tree/main/Climbing%20Stairs%20with%20Minimum%20Jumps)
 5. [House Robber Problem](https://github.com/Nawajish/Dynamic-Programming/tree/main/Maximize%20Robbery)
 6. [Minimum Cost Path - Two Moves](https://github.com/Nawajish/Dynamic-Programming/tree/main/Minimum%20Cost%20Path%20-%20Two%20Moves)
+7. [Minimum Cost Path - Three Moves](https://github.com/Nawajish/Dynamic-Programming/tree/main/Minimum%20Cost%20Path%20-%20Three%20Moves)
+8. [Goldmine](https://github.com/Nawajish/Dynamic-Programming/tree/main/Goldmine)
