@@ -9,3 +9,4 @@
 6. [Minimum Cost Path - Two Moves](https://github.com/Nawajish/Dynamic-Programming/tree/main/Minimum%20Cost%20Path%20-%20Two%20Moves)
 7. [Goldmine](https://github.com/Nawajish/Dynamic-Programming/tree/main/Goldmine)
 8. [Target Sum](https://github.com/Nawajish/Dynamic-Programming/tree/main/Target%20Sum)
+9. [Coin Change with Combinations](https://github.com/Nawajish/Dynamic-Programming/tree/main/Coin%20Change%20with%20Combinations)
