@@ -8,3 +8,4 @@
 5. [House Robber Problem](https://github.com/Nawajish/Dynamic-Programming/tree/main/Maximize%20Robbery)
 6. [Minimum Cost Path - Two Moves](https://github.com/Nawajish/Dynamic-Programming/tree/main/Minimum%20Cost%20Path%20-%20Two%20Moves)
 7. [Goldmine](https://github.com/Nawajish/Dynamic-Programming/tree/main/Goldmine)
+8. [Target Sum](https://github.com/Nawajish/Dynamic-Programming/tree/main/Target%20Sum)
