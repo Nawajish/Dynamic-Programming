@@ -55,6 +55,7 @@ public class UnboundedKnapsack{
 		return cache[n][W] = Math.max(profit1, profit2);
 	}
 
+	// Using a 2D table
 	public static int unboundedKnapsackTabulation(int[] weights, int[] values, int W){
 		// number of items
 		int n = values.length;
@@ -73,6 +74,25 @@ public class UnboundedKnapsack{
 		}
 
 		return dp[n][W];
+	}
+
+	// Using a 1D table
+	public static int unboundedKnapsackTabulation2(int[] weights, int[] values, int W){
+		// number of items
+		int n = values.length;
+
+		int[] dp = new int[W + 1];
+
+		Arrays.fill(dp, 0);
+		
+		for(int i = 0; i < n; i++){
+			for(int w = 0; w <= W; w++){
+				if(weights[i] <= w)
+					dp[w] = Math.max(values[i] + dp[w - weights[i]], dp[w]);							
+			}
+		}
+
+		return dp[W];
 	}
 
 	public static void main(String args[]){
@@ -106,6 +126,7 @@ public class UnboundedKnapsack{
 
 		System.out.println(unboundedKnapsackNaive(weights, values, W, values.length - 1));			
 		System.out.println(unboundedKnapsackMemoized(weights, values, W, values.length - 1, cache));		
-		System.out.println(unboundedKnapsackTabulation(weights, values, W));		
+		System.out.println(unboundedKnapsackTabulation(weights, values, W));	
+		System.out.println(unboundedKnapsackTabulation2(weights, values, W));		
 	}
 }
