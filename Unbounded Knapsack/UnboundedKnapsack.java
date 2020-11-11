@@ -85,9 +85,15 @@ public class UnboundedKnapsack{
 
 		Arrays.fill(dp, 0);
 		
+		// Iterate over items
 		for(int i = 0; i < n; i++){
+			// Iterate over all capacities
 			for(int w = 0; w <= W; w++){
+				// If current item's weight <= current bag capacity
 				if(weights[i] <= w)
+					// Choice1 => Current item is picked => Current item's value + Value possible with remaining capacity
+					// Choice2 => Current item is skipped => Value possible with remaining items and same capacity
+					// Current value = max(Choice1, Choice2)
 					dp[w] = Math.max(values[i] + dp[w - weights[i]], dp[w]);							
 			}
 		}
