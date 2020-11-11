@@ -11,5 +11,5 @@
 8. [Target Sum](https://github.com/Nawajish/Dynamic-Programming/tree/main/Target%20Sum)
 9. [Coin Change with Combinations](https://github.com/Nawajish/Dynamic-Programming/tree/main/Coin%20Change%20with%20Combinations)
 10. [Coin Change with Permutations](https://github.com/Nawajish/Dynamic-Programming/tree/main/Coin%20Change%20with%20Permutations)
-11. [0/1 Knapsack](https://github.com/Nawajish/Dynamic-Programming/tree/main/01%20Knapsack)
+11. [0/1 Knapsack](https://github.com/Nawajish/Dynamic-Programming/tree/main/01Knapsack)
 12. [Unbounded Knapsack](https://github.com/Nawajish/Dynamic-Programming/tree/main/Unbounded%20Knapsack)
