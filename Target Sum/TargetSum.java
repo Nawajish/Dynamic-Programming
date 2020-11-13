@@ -80,16 +80,32 @@ public class TargetSum{
 		return dp[A.length][target];
 	}
 
-	public static void main(String args[]){
-		int[] A = {4, 2, 7, 3, 8};
-		int target = 10;		
-	
-		if(targetSumNaive2(A, A.length - 1, target) == true)
-			System.out.println("YES");
-		else
-			System.out.println("NO");
-		
+	public static boolean targetSumTabulation2(int[] A, int target){
+		int n = A.length;
+		boolean[][] dp = new boolean[2][target + 1];		
 
+		for(int r = 0; r <= n; r++){
+			for(int c = 0; c <= target; c++){				
+				if(c == 0){
+					dp[r%2][c] = true;
+				}
+				else if(r == 0){
+					dp[r%2][c] = false;
+				}
+				else if(A[r - 1] <= c)
+					dp[r%2][c] = dp[(r - 1)%2][c - A[r - 1]] || dp[(r - 1)%2][c];
+				else
+					dp[r%2][c] = dp[(r - 1)%2][c];
+			}
+		}
+
+		return dp[n%2][target];
+	}
+
+	public static void main(String args[]){
+		int[] A = {5, 2, 3, 4};
+		int target = 91;		
+		
 		int[][] cache = new int[A.length][target];
 		for(int r = 0; r < cache.length; r++){
 			for(int c = 0; c < cache[0].length; c++){
@@ -97,11 +113,10 @@ public class TargetSum{
 			}
 		}
 
-		if(targetSumMemoization(A, 0, 0, target, cache) == true)
-			System.out.println("YES");
-		else
-			System.out.println("NO");				
-		
+
+		System.out.println(targetSumNaive2(A, A.length - 1, target));
+		System.out.println(targetSumMemoization(A, 0, 0, target, cache));
 		System.out.println(targetSumTabulation(A, target));
+		System.out.println(targetSumTabulation2(A, target));
 	}
 }
