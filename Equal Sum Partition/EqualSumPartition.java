@@ -17,8 +17,8 @@
 // 2) If sum of array elements is even, calculate sum/2 (the other halve) and find if a subset of given array sums to sum/2 
 //    which is essentially the 'Target Sum' problem. 
 
-public class EqualSumSubsets{
-	
+public class EqualSumPartition{
+
 	public static boolean targetSumTabulation(int[] A, int target){
 		int n = A.length;
 		boolean[][] dp = new boolean[2][target + 1];		
